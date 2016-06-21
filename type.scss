@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+@font-face {
+  font-family: 'aleolight';
+  src: url('aleo/Aleo-Light-webfont.eot');
+  src: url('aleo/Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('aleo/Aleo-Light-webfont.woff') format('woff'),
+  url('aleo/Aleo-Light-webfont.ttf') format('truetype'),
+  url('aleo/Aleo-Light-webfont.svg#aleolight') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'aleobold';
+  src: url('aleo/Aleo-Bold-webfont.eot');
+  src: url('aleo/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('aleo/Aleo-Bold-webfont.woff') format('woff'),
+       url('aleo/Aleo-Bold-webfont.ttf') format('truetype'),
+       url('aleo/Aleo-Bold-webfont.svg#aleobold') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'aleoregular';
+  src: url('Aleo-Regular-webfont.eot');
+  src: url('Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('Aleo-Regular-webfont.woff') format('woff'),
+  url('Aleo-Regular-webfont.ttf') format('truetype'),
+  url('Aleo-Regular-webfont.svg#aleoregular') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+%type--sans {
+  font-family: 'Lato', 'Arial', system, sans-serif;
+}
+
+%type--serif--light {
+  font-family: 'aleolight', 'Georgia', system, serif;
+}
+
+%type--serif--regular {
+  font-family: 'aleoregular', 'Georgia', system, serif;
+}
+
+%type--serif--bold {
+  font-family: 'aleobold', 'Georgia', system, serif;
+}
+
+body {
+  @extend %type--sans;
+}
+
+.emphasis {
+  @extend %type--serif;
+}
